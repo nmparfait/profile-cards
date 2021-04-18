@@ -248,3 +248,45 @@ style - 2
 style - 3
 ===============
 */
+
+.card-3 {
+  max-width: 771px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2rem;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.card-3 h4 {
+  font-size: 25px;
+}
+
+.card-3 .btn {
+  align-self: flex-start;
+}
+
+.card-3-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.card-3-link {
+  font-size: 1rem;
+  color: var(--clr-grey-1);
+}
+
+@media screen and (max-width: 992px) {
+  .card-3 {
+    max-width: 446px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  .card-3-link {
+    margin-top: 1rem;
+  }
+}
