@@ -208,7 +208,41 @@ style - 1
 style - 2
 ===============
 */
+.card-2 {
+  max-width: 641px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 3rem;
+  padding: 2rem 2.5rem;
+}
 
+.card-2 h4 {
+  font-size: 26px;
+}
+
+.card-2 p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.card-2 .btn {
+  margin-top: 1.5rem;
+  background: transparent;
+  color: var(--clr-grey-4);
+  border: 2px solid var(--clr-grey-4);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 776px) {
+  .card-2 {
+    max-width: 446px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    justify-items: center;
+  }
+}
 /*
 =============== 
 style - 3
